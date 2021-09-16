@@ -100,6 +100,15 @@ Backoff allows you to resend a message if there is a failure.
    RetryBackoffMs = 1000,
 ```
 
+## Idempotence
+When a producer does not get an acknowledgement of the message it could be because a) the message never made it to the broker or b) the success message never made it back to the producer.  Idempotence puts a number on the message that is unique allowing the producer to replay the message without having to worry about duplicates.
+
+```
+    EnableIdempotence = true,
+```
+
+
+
 ## AKS
 Acknowledgements now many servers need to respond to the producer before it responds.  These are:
 * None

@@ -10,7 +10,21 @@ To start, run:
 docker-compose up --build -d
 ```
 
-## Topics
+## Single broker
 * [Server Settings](./ServerSettings.md)
-* [C# Producer/Consumer](./DotNet.md)
 * [Kafka CLI](./CLI.md)
+* [C# Producer/Consumer](./DotNet.md)
+
+To bring down the containers run:
+```
+docker-compose down
+```
+
+## multiple Broker
+To start, run 
+```
+
+docker-compose  -f docker-compose-multiple.yaml up --build -d
+
+```
+
