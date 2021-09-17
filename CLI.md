@@ -19,7 +19,7 @@ kafka-topics --topic demo --describe --bootstrap-server localhost:9092
 
 ```
 
-## Increase the number of paritions
+## Increase the number of partitions
 ```sh
 kafka-topics --topic demo --partitions 5 --replication-factor 1 --create --bootstrap-server localhost:9092
 
