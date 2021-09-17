@@ -32,7 +32,7 @@ services:
     depends_on:
       - zookeeper
     ports:
-      - "29092:9092"
+      - "29092:19092"
     environment:
       KAFKA_BROKER_ID: 2
       KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
@@ -47,7 +47,7 @@ services:
     depends_on:
       - zookeeper
     ports:
-      - "39092:9092"
+      - "39092:19092"
     environment:
       KAFKA_BROKER_ID: 3
       KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'

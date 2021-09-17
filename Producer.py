@@ -3,7 +3,7 @@ from kafka.errors import KafkaError
 
 producer = KafkaProducer(
     bootstrap_servers=['localhost:19092'], 
-    acks = 'all',
+  
 )
 
 for somenumber in range(100000000000):
